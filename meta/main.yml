@@ -1,0 +1,7 @@
+galaxy_info:
+  author: Lars Bilke
+  description: Base packages
+
+  license: MIT
+
+  min_ansible_version: 1.2
