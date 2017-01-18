@@ -1,0 +1,21 @@
+---
+
+- name: Install common packages
+  package:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - vim
+    - ncdu
+    - htop
+    - wget
+  become: True
+
+- name: Fix locale
+  blockinfile:
+    dest: /etc/environment
+    marker: "# {mark} ANSIBLE MANAGED BLOCK Locale #"
+    content: |
+      LC_ALL=en_US.UTF-8
+      LANG=en_US.UTF-8
+  become: True

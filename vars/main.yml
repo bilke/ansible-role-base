@@ -1,0 +1,23 @@
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/core
+
+homebrew_installed_packages:
+  - curl
+  - git
+  - git-extras
+  - git-lfs
+  - htop
+  - ncdu
+  - tmux
+  - vim
+  - wget
+  - zsh
+
+homebrew_cask_apps:
+  - atom
+  - launchbar
+  - google-chrome
+  - istat-menus
+  - iterm2
+  - the-unarchiver
